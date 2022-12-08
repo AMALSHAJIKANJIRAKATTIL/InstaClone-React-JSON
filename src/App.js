@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import logo from './instacopy.webp';
+import camera from './camera-icon.png'
 import './App.css';
+import Postview from './Components/postview';
+import data from './Mock-data/data.json'
+
+
 
 function App() {
+  //console.log(data.user)
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={camera} className="camera-logo" alt="logo" />
       </header>
+      <div className='posts'>
+      {data.user.map((details,index)=>{
+        return(
+          <Postview post={details} key={index}></Postview>
+        );
+      })}
+      </div>
+      
     </div>
   );
 }
