@@ -1,3 +1,6 @@
+INSTA CLONE - https://github.com/AMALSHAJIKANJIRAKATTIL/InstaClone-React-JSON/blob/e401f54944fcd60ea7053c2d5892a63d9bbadefa/screencapture-localhost-3000-2022-12-08-20_54_34.png
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
